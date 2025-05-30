@@ -15,7 +15,7 @@ class Schema(BaseModel):
 @app.post("/chat")
 async def chat_function(data: Schema):
     completion = client.chat.completions.create(
-        model="qwen-qwq-32b",
+        model="gemma2-9b-it",
         messages=[
             {
                 "role": "system",
